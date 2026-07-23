@@ -1,7 +1,7 @@
 # sisdai-css
 
 El proyecto sisdai-css es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
-Investigación ([Sisdai](https://sisdai.conahcyt.mx/)). El Sisdai es un proyecto de investigación desarrollado por el 
+Investigación ([Sisdai](https://sisdai.org/)). El Sisdai es un proyecto de investigación desarrollado por el 
 Centro de Investigación en Ciencias de Información Geoespacial, A.C. 
 ([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
 ([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
