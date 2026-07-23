@@ -8,7 +8,7 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
       <p>
       El Sisdai utiliza 
         <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener noreferrer">Montserrat</a> 
-        como su familia tipográfica predeterminada (ya que ésta es la que el Gobierno Federal estipula), con un tamaño base de 16px, 
+        como su familia tipográfica predeterminada, con un tamaño base de 16px, 
         equivalente a 1rem. Todas las medidas tipográficas están definidas en 
         <code>rem</code> para asegurar que, al cambiar el tamaño base, todos 
         los textos se ajustan proporcionalmente manteniendo la jerarquía visual. 
