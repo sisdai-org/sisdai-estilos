@@ -241,51 +241,11 @@
         Restablecer
       </button>
     </menu>
-    
-    <nav aria-label="Menú del Gobierno de México" class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
-      <div class="nav-contenedor-identidad">
-        <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
-          <img 
-            class="nav-logo" 
-            :src="`${cdn}institucional/gobmx-2024.svg`" 
-            alt="Gobierno de México."
-            width="104.8"
-            height="38" 
-          />
-        </a>
-        <button 
-          v-if="esColapsable" 
-          @click="toggleGob" 
-          class="nav-boton-menu" 
-          :class="{ 'abierto': showGob }" 
-          aria-label="Menú del Gobierno de México" 
-          :aria-hidden="!esColapsable"
-          :aria-expanded="esColapsable && !showGob"
-          aria-controls="menugobiernodemexico" 
-          id="botongobmx"
-          >
-          <span class="nav-icono-menu" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div id="menugobiernodemexico" class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
-        <div class="nav-menu-principal">
-          <ul class="nav-menu">
-            <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Trámites</a></li>
-            <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Gobierno</a></li>
-            <li>
-              <a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer" aria-label="Búsqueda">
-                <span class="pictograma-buscar" aria-hidden="true"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <nav aria-label="Menú principal" class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
-        <a href="https://conahcyt.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener noreferrer">
-          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" :src="`${cdn}institucional/conahcyt-azul.svg`" alt="Conahcyt">
+        <a href="https://sisdai.org/" class="nav-hipervinculo-logo" target="_blank" rel="noopener noreferrer">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="38" height="38" src="https://avatars.githubusercontent.com/u/83569551?s=200&v=4" alt="Sisdai">
         </a>
         <button 
           v-if="esColapsable"
@@ -307,16 +267,6 @@
       <div id="menusisdaicss" class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }" >
         <div class="nav-menu-complementario">
           <ul class="nav-menu">
-            <li>
-              <a 
-                href="https://sisdai.conahcyt.mx" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="nav-hipervinculo"
-              >
-                <small>IR A SISDAI</small>
-              </a>
-            </li>
             <li>
               <a
                 href="https://github.com/sisdai-org/sisdai-css"
@@ -439,7 +389,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú de accesibilidad</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegación</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de contenido <span class="etiqueta">pre</span></RouterLink></li>
