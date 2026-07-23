@@ -160,33 +160,5 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </div>
     </div>
 
-    <div class="ancho-lectura">
-      <h3 class="m-t-5">Colores institucionales</h3>
-      <p>
-        Definidas en el archivo <code>src/color/institucionales.scss</code>, estas variables son colores definidos 
-        en base a los colores institucionales del Gobierno de México y Conahcyt durante el 2024.
-        Que necesitarán actualizarse cuando los colores de identidad de alguno cambie.
-      </p>
-    </div>
-
-    <div class="flex flex-contenido-centrado">
-      <div class="columna-4">
-        <p>Gobierno de México</p>
-        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-mx-0)" texto="#000"/>
-      </div>
-
-      <div class="columna-4">
-        <p>Conahcyt</p>
-        <EjemploMuestraColor variable="var(--color-conahcyt-degradado)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-conahcyt-4)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-conahcyt-3)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-conahcyt-2)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-conahcyt-1)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-conahcyt-0)" texto="#000"/>
-      </div>
-    </div>
-
   </div>
 </template>
