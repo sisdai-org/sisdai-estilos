@@ -718,7 +718,7 @@ body[data-tema=oscuro] {
   --menu-accesibilidad-boton-enfoque-sombra: var(--estado-enfoque);
 }
 
-.piepagina-titulo, .indice-contenido .indice-contenido-titulo, dialog.modal .modal-contenedor .modal-titulo, .portada .portada-titulo, .portada .portada-subtitulo, .portada.portada-secundaria .portada-titulo, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .tarjeta .tarjeta-titulo, details summary, .titulo-tabla, table caption {
+.indice-contenido .indice-contenido-titulo, dialog.modal .modal-contenedor .modal-titulo, .portada .portada-titulo, .portada .portada-subtitulo, .portada.portada-secundaria .portada-titulo, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .tarjeta .tarjeta-titulo, details summary, .titulo-tabla, table caption {
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -8364,49 +8364,6 @@ dl.informacion-despliegue dd:not(:last-child) {
   margin: 0 0 0 8px;
 }
 
-.navegacion-gobmx {
-  background-color: var(--color-mx-2);
-  box-shadow: none;
-}
-.navegacion-gobmx .nav-menu-contenedor {
-  background-color: var(--color-mx-2);
-  border-top: 1px solid var(--color-mx-1);
-}
-.navegacion-gobmx .nav-hipervinculo {
-  background: transparent;
-  box-shadow: none;
-  color: var(--color-mx-0);
-}
-.navegacion-gobmx .nav-hipervinculo:visited {
-  color: var(--color-mx-0);
-}
-.navegacion-gobmx .nav-hipervinculo:active, .navegacion-gobmx .nav-hipervinculo:hover, .navegacion-gobmx .nav-hipervinculo:focus {
-  background: transparent;
-  box-shadow: none;
-  color: var(--color-mx-0);
-  text-decoration: underline;
-}
-.navegacion-gobmx .nav-hipervinculo:focus, .navegacion-gobmx .nav-hipervinculo:focus-visible {
-  outline: none;
-  background: transparent;
-  box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
-}
-.navegacion-gobmx .nav-boton-menu {
-  background-color: transparent;
-  color: var(--color-mx-0);
-}
-.navegacion-gobmx .nav-boton-menu:not(:disabled):hover {
-  background-color: transparent;
-  color: var(--color-mx-1);
-}
-.navegacion-gobmx .nav-boton-menu:not(:disabled):focus {
-  background-color: transparent;
-  color: var(--color-mx-0);
-}
-.navegacion-gobmx.navegacion-extendida .nav-menu-contenedor {
-  border-top: none;
-}
-
 .pestanias [role=tablist] {
   min-width: 100%;
 }
@@ -8443,93 +8400,6 @@ dl.informacion-despliegue dd:not(:last-child) {
   background-color: var(--boton-secundario-cursor-fondo);
   box-shadow: inherit;
   border-bottom: 4px solid var(--boton-secundario-borde);
-}
-
-footer,
-.piepagina-gobmx,
-.piepagina-conahcyt {
-  font-size: 0.875rem;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-footer p,
-.piepagina-gobmx p,
-.piepagina-conahcyt p {
-  margin: 16px 0;
-}
-footer a,
-.piepagina-gobmx a,
-.piepagina-conahcyt a {
-  display: inline-block;
-  line-height: max(24px, 1.5em);
-  text-underline-offset: 4px;
-}
-footer li,
-.piepagina-gobmx li,
-.piepagina-conahcyt li {
-  margin: 0;
-}
-footer ul,
-footer ol,
-.piepagina-gobmx ul,
-.piepagina-gobmx ol,
-.piepagina-conahcyt ul,
-.piepagina-conahcyt ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.piepagina-titulo {
-  font-size: 1.125rem;
-}
-
-.piepagina-social {
-  display: flex;
-  font-size: 1.5rem;
-  padding: 0;
-  gap: 24px;
-}
-.piepagina-social li {
-  margin: 0;
-  display: inline-flex;
-}
-
-.piepagina-gobmx {
-  background-color: var(--color-mx-2);
-  background-position: 0 calc(100% + 34px);
-  background-repeat: repeat-x;
-  background-size: auto 80px;
-  color: var(--color-mx-0);
-  padding-bottom: 80px;
-}
-.piepagina-gobmx .hipervinculo-gobmx {
-  color: var(--color-mx-0);
-}
-.piepagina-gobmx .hipervinculo-gobmx:visited {
-  color: var(--color-mx-0);
-}
-.piepagina-gobmx .hipervinculo-gobmx:hover, .piepagina-gobmx .hipervinculo-gobmx:focus, .piepagina-gobmx .hipervinculo-gobmx:focus-visible {
-  color: var(--color-mx-0);
-  text-decoration: underline;
-}
-.piepagina-gobmx .hipervinculo-subrayado {
-  text-decoration: underline;
-}
-
-.piepagina-conahcyt {
-  background: var(--color-conahcyt-degradado);
-  color: var(--color-conahcyt-0);
-}
-.piepagina-conahcyt .hipervinculo-conahcyt {
-  color: var(--color-conahcyt-0);
-}
-.piepagina-conahcyt .hipervinculo-conahcyt:visited {
-  color: var(--color-conahcyt-0);
-}
-.piepagina-conahcyt .hipervinculo-conahcyt:hover, .piepagina-conahcyt .hipervinculo-conahcyt:focus, .piepagina-conahcyt .hipervinculo-conahcyt:focus-visible {
-  color: var(--color-conahcyt-0);
-  text-decoration: underline;
 }
 
 .contenedor-vis {
