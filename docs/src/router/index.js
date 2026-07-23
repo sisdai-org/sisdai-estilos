@@ -353,14 +353,6 @@ const router = createRouter({
           },
         },
         {
-          path: 'institucionales',
-          name: 'Componentes / Institucionales',
-          component: () => import('../views/ComponentesInstitucionales.vue'),
-          meta: {
-            title: 'Institucionales | Componentes | sisdai-css'
-          },
-        },
-        {
           path: 'audio',
           name: 'Componentes / Audio',
           component: () => import('../views/ComponenteAudio.vue'),
