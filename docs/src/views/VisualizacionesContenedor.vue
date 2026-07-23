@@ -21,8 +21,8 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           agregan explícitamente a la lista del contenedor. 
         </li>
         <li>
-          Atribuciones (<code>contenedor-vis-atribuciones</code>): situada al final del contenedor, esta sección incluye enlaces 
-          hace Conahcyt y Sisdai, proporcionando créditos y referencias necesarias.
+          Atribuciones (<code>contenedor-vis-atribuciones</code>): situada al final del contenedor, 
+          esta sección incluye el enlace al Sisdai, proporcionando créditos y referencias necesarias.
         </li>
       </ol>
     </div>
@@ -79,15 +79,12 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         </div>
       </div>
       <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
-        <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a class="atribuciones-logo" href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           <img
             class="a11y-oscura-filtro-blanco"
-            :src="`${cdn}institucional/conahcyt-azul.svg`"
-            alt="Conahcyt"
+            src="https://avatars.githubusercontent.com/u/83569551?s=200&v=4"
+            alt="Sisdai"
           />
-        </a>
-        <a href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
-          Sisdai
         </a>
       </div>
     </div>
@@ -117,19 +114,12 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           <!-- atribuciones -->
           <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
             <a 
-              class="logo-conacyt" 
-              href="https://conahcyt.mx/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <img class="a11y-oscura-filtro-blanco" src="..." alt="Conahcyt"/>
-            </a>
-            <a 
+              class="atribuciones-logo" 
               href="https://sisdai.org/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Sisdai
+              <img class="a11y-oscura-filtro-blanco" src="..." alt="Sisdai"/>
             </a>
           </div>
         </div>

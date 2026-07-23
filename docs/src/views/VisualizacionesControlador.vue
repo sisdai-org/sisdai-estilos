@@ -112,15 +112,12 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         </div>
       </div>
       <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
-        <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a class="atribuciones-logo" href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           <img
             class="a11y-oscura-filtro-blanco"
-            :src="`${cdn}institucional/conahcyt-azul.svg`"
-            alt="Conahcyt"
+            src="https://avatars.githubusercontent.com/u/83569551?s=200&v=4"
+            alt="Sisdai"
           />
-        </a>
-        <a href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
-          Sisdai
         </a>
       </div>
     </div>
