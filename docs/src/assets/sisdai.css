@@ -8614,19 +8614,19 @@ dl.informacion-despliegue dd:not(:last-child) {
     margin-right: 24px;
   }
 }
-.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt {
+.contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo {
   filter: grayscale(100%);
 }
-.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt img {
+.contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo img {
   float: left;
   height: 24px;
   opacity: 0.5;
   transition: all 0.25s ease-in-out;
 }
-.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:hover, .contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:focus {
+.contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo:hover, .contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo:focus {
   filter: grayscale(0%);
 }
-.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:hover img, .contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:focus img {
+.contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo:hover img, .contenedor-vis .contenedor-vis-atribuciones .atribuciones-logo:focus img {
   opacity: 1;
 }
 .contenedor-vis.sin-atribuciones .contenedor-vis-atribuciones {
