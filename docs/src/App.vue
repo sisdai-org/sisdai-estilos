@@ -319,7 +319,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/CentroGeo/sisdai-css"
+                href="https://github.com/sisdai-org/sisdai-css"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="nav-hipervinculo"
