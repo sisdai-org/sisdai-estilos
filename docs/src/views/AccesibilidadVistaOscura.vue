@@ -30,7 +30,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <p>
         La clase <code>.a11y-oscura-filtro-blanco</code> se agrega a imágenes con fondo libre (png o svg)
         para aplicar un filtro que vuelve completamente blanca una imagen al pasar al tema oscuro.<br />
-        Por ejemplo el logotipo del Conahcyt en la navegación principal:
+        Por ejemplo el logotipo del Sisdai en la navegación principal:
       </p>
     </div>
     <EjemploCodigo
@@ -40,7 +40,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <img 
           class="nav-logo a11y-oscura-filtro-blanco" 
           src="..." 
-          alt="Conahcyt"
+          alt="Sisdai"
         />
       '
     />
