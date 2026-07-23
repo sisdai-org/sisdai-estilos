@@ -172,7 +172,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           <div class="tarjeta-pie flex">
             <a 
               class="boton boton-primario boton-chico"
-              href="https://sisdai-componentes.conahcyt.mx/"
+              href="https://componentes.sisdai.org/"
               aria-label="Ir a documentación de sisdai-componentes"
               target="_blank"
               rel="noopener noreferrer"
@@ -217,7 +217,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           <div class="tarjeta-pie flex">
             <a 
               class="boton boton-primario boton-chico"
-              href="https://sisdai-graficas.conahcyt.mx/"
+              href="https://graficas.sisdai.org/"
               aria-label="Ir a documentación de sisdai-graficas"
               target="_blank"
               rel="noopener noreferrer"
@@ -262,7 +262,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           <div class="tarjeta-pie flex">
             <a 
               class="boton boton-primario boton-chico"
-              href="https://sisdai-mapas.conahcyt.mx/"
+              href="https://mapas.sisdai.org"
               aria-label="Ir a documentación de sisdai-mapas"
               target="_blank"
               rel="noopener noreferrer"

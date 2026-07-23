@@ -11,14 +11,14 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         El contenedor-vis es un elemento importante utilizado por las
         bibliotecas
         <a
-          href="https://sisdai-graficas.conahcyt.mx/"
+          href="https://graficas.sisdai.org/"
           target="_blank"
           rel="noopener noreferrer"
           >sisdai-graficas</a
         >
         y
         <a
-          href="https://sisdai-mapas.conahcyt.mx/"
+          href="https://mapas.sisdai.org"
           target="_blank"
           rel="noopener noreferrer"
           >sisdai-mapas</a
