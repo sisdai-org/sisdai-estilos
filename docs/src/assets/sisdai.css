@@ -30,7 +30,7 @@
  * with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
  */
 :root {
-  --tipografia-familia: "Montserrat", sans-serif;
+  --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
   --tipografia-codigo: monospace;
 }
@@ -167,18 +167,6 @@ kbd {
   --color-error-3: #940B1C;
   --color-error-2: #FF6969;
   --color-error-1: #FCDADE;
-}
-
-:root {
-  --color-conahcyt-4: #001C4A;
-  --color-conahcyt-3: #002663;
-  --color-conahcyt-2: #003384;
-  --color-conahcyt-1: #13AFF0;
-  --color-conahcyt-0: #FFF;
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001C4A);
-  --color-mx-2: #611232;
-  --color-mx-1: #D4C19C;
-  --color-mx-0: #FFF;
 }
 
 body[data-perfil=predeterminada],
@@ -5929,13 +5917,15 @@ select {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: flex;
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
-  color: var(--campo-color);
 }
 select:disabled {
   opacity: 1;
   background-image: var(--campo-selector-deshabilitado-svg);
+}
+select {
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  color: var(--campo-color);
 }
 select:disabled {
   background-color: var(--campo-deshabilitado-fondo);
@@ -6973,7 +6963,6 @@ details[open] summary {
   align-items: center;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
-  padding: 4px;
 }
 .boton-pictograma.deshabilitado, .boton-pictograma:disabled {
   pointer-events: none;
@@ -6982,6 +6971,9 @@ details[open] summary {
 .boton-pictograma:hover, .boton-pictograma:focus {
   text-decoration: none;
   outline: none;
+}
+.boton-pictograma {
+  padding: 4px;
 }
 .boton-pictograma .pictograma,
 .boton-pictograma [class^=pictograma-],
@@ -7021,14 +7013,6 @@ details[open] summary {
   align-items: center;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
-  background-color: var(--boton-primario-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
-  color: var(--boton-primario-color);
-  display: block;
-  border-radius: 12px;
-  padding: 32px;
-  text-align: left;
-  width: 100%;
 }
 .boton-descarga.deshabilitado, .boton-descarga:disabled {
   pointer-events: none;
@@ -7037,6 +7021,11 @@ details[open] summary {
 .boton-descarga:hover, .boton-descarga:focus {
   text-decoration: none;
   outline: none;
+}
+.boton-descarga {
+  background-color: var(--boton-primario-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
+  color: var(--boton-primario-color);
 }
 .boton-descarga.deshabilitado, .boton-descarga:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
@@ -7055,6 +7044,13 @@ details[open] summary {
   background-color: var(--boton-primario-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-enfoque-borde), 0 0 0 1px var(--boton-primario-enfoque-contorno), 0 0 8px var(--boton-primario-enfoque-sombra);
   color: var(--boton-primario-enfoque-color);
+}
+.boton-descarga {
+  display: block;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: left;
+  width: 100%;
 }
 .boton-descarga .boton-descarga-titulo {
   display: block;
@@ -7108,17 +7104,6 @@ details[open] summary {
   align-items: center;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
-  background-color: var(--boton-primario-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
-  color: var(--boton-primario-color);
-  background-color: transparent;
-  box-shadow: none;
-  color: var(--campo-etiqueta-color);
-  border-radius: 10rem;
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 8px 16px;
-  margin: 0;
 }
 .boton-alternar [type=radio] + label.deshabilitado, .boton-alternar [type=radio] + label:disabled {
   pointer-events: none;
@@ -7127,6 +7112,11 @@ details[open] summary {
 .boton-alternar [type=radio] + label:hover, .boton-alternar [type=radio] + label:focus {
   text-decoration: none;
   outline: none;
+}
+.boton-alternar [type=radio] + label {
+  background-color: var(--boton-primario-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
+  color: var(--boton-primario-color);
 }
 .boton-alternar [type=radio] + label.deshabilitado, .boton-alternar [type=radio] + label:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
@@ -7145,6 +7135,16 @@ details[open] summary {
   background-color: var(--boton-primario-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-enfoque-borde), 0 0 0 1px var(--boton-primario-enfoque-contorno), 0 0 8px var(--boton-primario-enfoque-sombra);
   color: var(--boton-primario-enfoque-color);
+}
+.boton-alternar [type=radio] + label {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--campo-etiqueta-color);
+  border-radius: 10rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  margin: 0;
 }
 .boton-alternar [type=radio] + label::after,
 .boton-alternar [type=radio] + label::before {
@@ -7335,13 +7335,6 @@ details[open] summary {
   align-items: center;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
-  padding: 4px;
-  position: sticky;
-  top: 0;
-  margin: 8px 8px 8px 0;
-  background: var(--globo-boton-fondo);
-  box-shadow: inset 0 0 0 0 var(--globo-boton-borde), 0 0 0 var(--globo-boton-sombra);
-  color: var(--globo-boton-color);
 }
 .globo-informacion .globo-informacion-cerrar.deshabilitado, .globo-informacion .globo-informacion-cerrar:disabled {
   pointer-events: none;
@@ -7350,6 +7343,15 @@ details[open] summary {
 .globo-informacion .globo-informacion-cerrar:hover, .globo-informacion .globo-informacion-cerrar:focus {
   text-decoration: none;
   outline: none;
+}
+.globo-informacion .globo-informacion-cerrar {
+  padding: 4px;
+  position: sticky;
+  top: 0;
+  margin: 8px 8px 8px 0;
+  background: var(--globo-boton-fondo);
+  box-shadow: inset 0 0 0 0 var(--globo-boton-borde), 0 0 0 var(--globo-boton-sombra);
+  color: var(--globo-boton-color);
 }
 .globo-informacion .globo-informacion-cerrar .pictograma,
 .globo-informacion .globo-informacion-cerrar [class^=pictograma-],
@@ -7942,7 +7944,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   padding: 4px 24px;
   margin-left: -24px;
   margin-right: -24px;
-  flex: 1 0 calc(100% - 48px);
+  flex: 1 0 100%;
 }
 @media screen and (min-width: 768px) {
   .nav-contenedor-identidad .nav-informacion {
@@ -8159,14 +8161,16 @@ dl.informacion-despliegue dd:not(:last-child) {
   white-space: nowrap;
 }
 
-.nav-hiperviculo-logo {
+.nav-hiperviculo-logo,
+.nav-hipervinculo-logo {
   flex-shrink: 0;
   display: inline-flex;
   padding: 4px 0;
   margin: 0;
   border-radius: 0;
 }
-.nav-hiperviculo-logo:focus-visible {
+.nav-hiperviculo-logo:focus-visible,
+.nav-hipervinculo-logo:focus-visible {
   outline: none;
   background-color: transparent;
   box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
@@ -8176,9 +8180,6 @@ dl.informacion-despliegue dd:not(:last-child) {
   background: var(--boton-sin-contenedor-primario-fondo);
   box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-borde), 0 0 0 var(--boton-sin-contenedor-primario-sombra);
   color: var(--boton-sin-contenedor-primario-color);
-  width: 46px;
-  height: 46px;
-  justify-content: center;
 }
 .navegacion .nav-boton-menu.deshabilitado, .navegacion .nav-boton-menu:disabled {
   background: var(--boton-sin-contenedor-primario-deshabilitado-fondo);
@@ -8194,6 +8195,11 @@ dl.informacion-despliegue dd:not(:last-child) {
   background: var(--boton-sin-contenedor-primario-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-sin-contenedor-primario-enfoque-borde), 0 0 8px var(--boton-sin-contenedor-primario-enfoque-sombra);
   color: var(--boton-sin-contenedor-primario-enfoque-color);
+}
+.navegacion .nav-boton-menu {
+  width: 46px;
+  height: 46px;
+  justify-content: center;
 }
 .navegacion .nav-boton-menu .nav-icono-menu {
   background: currentcolor;
@@ -8258,9 +8264,6 @@ dl.informacion-despliegue dd:not(:last-child) {
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 .nav-boton-submenu:visited {
   color: var(--navegacion-primaria-color);
@@ -8286,6 +8289,11 @@ dl.informacion-despliegue dd:not(:last-child) {
   background-color: var(--navegacion-primaria-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
+.nav-boton-submenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .nav-boton-submenu::after {
   font-family: sisdai-pictogramas, sans-serif;
   font-size: 1rem;
@@ -8306,10 +8314,6 @@ dl.informacion-despliegue dd:not(:last-child) {
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
 }
 .nav-boton-regresar:visited {
   color: var(--navegacion-primaria-color);
@@ -8334,6 +8338,12 @@ dl.informacion-despliegue dd:not(:last-child) {
   outline: none;
   background-color: var(--navegacion-primaria-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
+}
+.nav-boton-regresar {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
 }
 .nav-boton-regresar::before {
   font-family: sisdai-pictogramas, sans-serif;
@@ -9942,15 +9952,6 @@ div.controlador-vis label {
   align-items: center;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
-  background-color: var(--boton-primario-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
-  color: var(--boton-primario-color);
-  position: absolute;
-  justify-content: center;
-  transform: translateY(-100%);
-  z-index: 99999;
-  width: 100%;
-  border-radius: 0;
 }
 .ir-contenido-principal.deshabilitado, .ir-contenido-principal:disabled {
   pointer-events: none;
@@ -9959,6 +9960,11 @@ div.controlador-vis label {
 .ir-contenido-principal:hover, .ir-contenido-principal:focus {
   text-decoration: none;
   outline: none;
+}
+.ir-contenido-principal {
+  background-color: var(--boton-primario-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
+  color: var(--boton-primario-color);
 }
 .ir-contenido-principal.deshabilitado, .ir-contenido-principal:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
@@ -9977,6 +9983,14 @@ div.controlador-vis label {
   background-color: var(--boton-primario-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-enfoque-borde), 0 0 0 1px var(--boton-primario-enfoque-contorno), 0 0 8px var(--boton-primario-enfoque-sombra);
   color: var(--boton-primario-enfoque-color);
+}
+.ir-contenido-principal {
+  position: absolute;
+  justify-content: center;
+  transform: translateY(-100%);
+  z-index: 99999;
+  width: 100%;
+  border-radius: 0;
 }
 .ir-contenido-principal:focus {
   transform: translateY(0%);
@@ -10010,13 +10024,13 @@ div.controlador-vis label {
 .a11y-simplificada .a11y-simplificada-ocultar {
   display: none;
 }
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:not(:last-child) {
+  margin-right: 8px;
+}
 .a11y-simplificada .a11y-simplificada-formato-hipervinculo {
   background-color: transparent;
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   color: var(--hipervinculo-color);
-}
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:not(:last-child) {
-  margin-right: 8px;
 }
 .a11y-simplificada .a11y-simplificada-formato-hipervinculo:disabled {
   background-color: transparent;
@@ -10039,6 +10053,13 @@ div.controlador-vis label {
   outline-offset: 4px;
   box-shadow: none;
 }
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
+.a11y-simplificada input[type=button]:not(:last-child),
+.a11y-simplificada input[type=submit]:not(:last-child),
+.a11y-simplificada input[type=reset]:not(:last-child) {
+  margin-right: 8px;
+}
 .a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
 .a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
 .a11y-simplificada input[type=button],
@@ -10047,13 +10068,6 @@ div.controlador-vis label {
   background-color: transparent;
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   color: var(--hipervinculo-color);
-}
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
-.a11y-simplificada input[type=button]:not(:last-child),
-.a11y-simplificada input[type=submit]:not(:last-child),
-.a11y-simplificada input[type=reset]:not(:last-child) {
-  margin-right: 8px;
 }
 .a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):disabled,
 .a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):disabled,
@@ -10232,7 +10246,7 @@ div.controlador-vis label {
 }
 
 .a11y-tipografia {
-  --tipografia-familia: "Atkinson Hyperlegible", sans-serif;
+  --tipografia-familia: 'Atkinson Hyperlegible', sans-serif;
 }
 
 .a11y-solo-lectura {
