@@ -78,7 +78,8 @@
   }
 }
 
-.nav-hiperviculo-logo {
+.nav-hiperviculo-logo,
+.nav-hipervinculo-logo {
   flex-shrink: 0;
   display: inline-flex;
   padding: map.get(variables.$espaciado, 'minimo') 0;
