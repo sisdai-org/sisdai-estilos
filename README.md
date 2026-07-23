@@ -6,7 +6,7 @@ Centro de Investigación en Ciencias de Información Geoespacial, A.C.
 ([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
 ([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx) 
+Para leer la documentación de la biblioteca, puedes visitar el sitio [estilos.sisdai.org/](https://estilos.sisdai.org/) 
 o levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este
 documento.
 
