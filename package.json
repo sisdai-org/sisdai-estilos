@@ -1,10 +1,10 @@
 {
-  "name": "@sisdai-org/sisdai-css",
+  "name": "@sisdai-org/sisdai-estilos",
   "version": "1.10.3",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
+  "description": "Biblioteca de estilos del Sistema de Diseño y Accesibilidad para la Investigación (Sisdai)",
   "license": "LGPL-3.0-only",
   "main": "src/sisdai.scss",
   "scripts": {
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CentroGeo/sisdai-css.git"
+    "url": "git+https://github.com/CentroGeo/sisdai-estilos.git"
   },
   "bugs": {
-    "url": "https://github.com/CentroGeo/sisdai-css/issues"
+    "url": "https://github.com/CentroGeo/sisdai-estilos/issues"
   },
   "homepage": "https://estilos.sisdai.org",
   "dependencies": {
