@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CentroGeo/sisdai-estilos.git"
+    "url": "git+https://github.com/sisdai-org/sisdai-estilos.git"
   },
   "bugs": {
-    "url": "https://github.com/CentroGeo/sisdai-estilos/issues"
+    "url": "https://github.com/sisdai-org/sisdai-estilos/issues"
   },
   "homepage": "https://estilos.sisdai.org",
   "dependencies": {
