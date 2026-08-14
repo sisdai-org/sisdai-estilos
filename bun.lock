@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@sisdai-org/sisdai-css",
+      "name": "@sisdai-org/sisdai-estilos",
       "dependencies": {
         "sass": "^1.86.0",
       },

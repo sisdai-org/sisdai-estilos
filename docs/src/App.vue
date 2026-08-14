@@ -269,11 +269,11 @@
           <ul class="nav-menu">
             <li>
               <a
-                href="https://github.com/sisdai-org/sisdai-css"
+                href="https://github.com/sisdai-org/sisdai-estilos"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="nav-hipervinculo"
-                :aria-label="`Repositorio de código sisdai-css versión ${pkg.version}`"
+                :aria-label="`Repositorio de código sisdai-estilos versión ${pkg.version}`"
               >
                 <span class="pictograma-social-github m-r-1" aria-hidden="true" />
                 <span aria-hidden="true">v{{ pkg.version }}</span>
