@@ -1,17 +1,16 @@
-# sisdai-css
+# sisdai-estilos
 
-El proyecto sisdai-css es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
-Investigación ([Sisdai](https://sisdai.org/)). El Sisdai es un proyecto de investigación desarrollado por el 
-Centro de Investigación en Ciencias de Información Geoespacial, A.C. 
-([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
-([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
+El proyecto sisdai-estilos es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
+Investigación ([Sisdai](https://sisdai.org/)). 
+
+El Sisdai es el sistema de diseño y accesibilidad para la creación de proyectos y productos de investigación digitales coherentes, consistentes y comprensibles. Es de código abierto y fundamentado en principios de accesibilidad e inclusión y desarrollado por un equipo multidiciplinario.
 
 Para leer la documentación de la biblioteca, puedes visitar el sitio [estilos.sisdai.org/](https://estilos.sisdai.org/) 
 o levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este
 documento.
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla en su equipo a través del 
-**protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/~centrogeomx).
+**protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/org/sisdai.org).
 
 ## Utilidades
 
@@ -22,12 +21,6 @@ Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla en
 * Contiene un archivo de `_mixins` general para reutilizar los mediaquery de los límites declarados para la correcta visualización en celulares y pantallas más grandes
 
 ## Instalación y uso
-
-Si tu desarrollo está creado con el [proyecto-base](https://github.com/CentroGeo/sisdai-proyecto-base), ya
-tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
-ese caso puedes ir a la sección [Actualización](#actualización).
-
-### Agrega las tipografías
 
 Esta biblioteca utiliza las tipografías de Montserrat y Atkinson Hyperlegible de Google fonts.
 
@@ -44,22 +37,22 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-css mediante dos opciones:
+En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-estilos mediante dos opciones:
 
-**Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/@centrogeomx/sisdai-css).
+**Opción A.** Desde el repositorio del [sisdai-estilos en npm](https://www.npmjs.com/package/@sisdai.org/sisdai-estilos).
 
 En la línea de comando escribe
 
 ```bash
-npm i @centrogeomx/sisdai-css
+npm i @sisdai.org/sisdai-estilos
 ```
 
-**Opción B.** Desde el repositorio de [sisdai-css en github](https://github.com/sisdai-org/sisdai-css).
+**Opción B.** Desde el repositorio de [sisdai-estilos en github](https://github.com/sisdai-org/sisdai-estilos).
 
 En la línea de comando escribe
 
 ```bash
-npm install git+https://github.com/sisdai-org/sisdai-css
+npm install git+https://github.com/sisdai-org/sisdai-estilos
 ```
 
 ### Importa la biblioteca
@@ -69,7 +62,7 @@ Puedes importar la biblioteca de manera general en el archivo `main.js` de tu pr
 ```js
 // src/main.js
 
-import '@centrogeomx/sisdai-css'
+import '@sisdai.org/sisdai-estilos'
 
 ```
 
@@ -77,15 +70,15 @@ import '@centrogeomx/sisdai-css'
 
 ```css
 /* archivo css */
-@import '@centrogeomx/sisdai-css';
+@import '@sisdai.org/sisdai-estilos';
 ```
 
 *Opcionalmente se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
 
 ```scss
 /* archivo scss */
-@use '@centrogeomx/sisdai-css/src/_variables' as variables;
-@use '@centrogeomx/sisdai-css/src/_mixins' as mixins;
+@use '@sisdai.org/sisdai-estilos/src/_variables' as variables;
+@use '@sisdai.org/sisdai-estilos/src/_mixins' as mixins;
 ```
 
 ### Uso de la biblioteca
@@ -106,20 +99,20 @@ Existen además clases para dar estilo a elementos, las cuales se encuentran agr
 
 Si necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente usando una de estas dos opciones
 
-**Opción A.** Para versiones publicadas en el repositorio de [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
+**Opción A.** Para versiones publicadas en el repositorio de [sisdai-estilos en npm](https://www.npmjs.com/package/@sisdai.org/sisdai-estiloss).
 
 ```bash
-npm i @centrogeomx/sisdai-css@vN.N.N
+npm i @sisdai.org/sisdai-estilos@vN.N.N
 ```
 
-**Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en github](https://github.com/sisdai-org/sisdai-css)
+**Opción B.** Para cualquier versión desde el repositorio de [sisdai-estilos en github](https://github.com/sisdai-org/sisdai-estilos)
 ```bash
-npm install git+https://github.com/sisdai-org/sisdai-css#vN.N.N
+npm install git+https://github.com/sisdai-org/sisdai-estilos#vN.N.N
 ```
 
 donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
-Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-css](https://github.com/sisdai-org/sisdai-css) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
+Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-estilos](https://github.com/sisdai-org/sisdai-estilos) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
 
 
 ## Listado de elementos
@@ -172,13 +165,13 @@ y dependencias del proyecto se muestran aquí usando tanto npm, como nvm.
 Clona este repositorio utilizando **solo el protocolo HTTPS**, es decir.
 
 ```bash
-git clone https://github.com/sisdai-org/sisdai-css.git
+git clone https://github.com/sisdai-org/sisdai-estilos.git
 ```
 
 Entra a la carpeta del proyecto
 
 ``` sh
-cd sisdai-css
+cd sisdai-estilos
 ```
 
 Instala las dependencias del proyecto
@@ -206,7 +199,7 @@ npm run docs:dev
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
 
-Sisdai y sisdai-css están alineadas a las disposiciones establecidas por
+Sisdai y sisdai-estilos están alineadas a las disposiciones establecidas por
 la Coordinación de Estrategia Digital Nacional (
 DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen
 como objetivo fortalecer el uso del software
@@ -217,7 +210,7 @@ artículo 63 se explicita que "cuando se trate
 de desarrollos basados en software libre, se respetarán las condiciones de su
 licenciamiento original [...]".
 
-Considerando lo anterior, sisdai-css se publica bajo la licencia
+Considerando lo anterior, sisdai-estilos se publica bajo la licencia
 [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html). Dicha licencia se puede
 consultar en el archivo _LICENSE_ de este repositorio.
 Esta licencia se encuentra disponible en inglés porque aunque el Sisdai privilegia
@@ -226,10 +219,9 @@ el idioma español se respeta la versión original de acuerdo al proyecto
 
 ## Contribuir
 
-Por el momento sólo quienes sean
-parte de un equipo de investigación del capítulo de un [ENI](https://eni.conahcyt.mx)
-podrán levantar issues en este repositorio. El equipo del [Sisdai](https://sisdai.conahcyt.mx) se encargará de mantenerlo.
+Lo sentimos!  (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
 
+Nos encontramos desarrollando el flujo de contribución. En breve actualizaremos la sección.
 ___
 
 ### ¿Cómo agregar un nuevo estilo?
@@ -240,7 +232,7 @@ Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento 
 una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del elemento. 
 
 ```bash
-sisdai-css/
+sisdai-estilos/
 └── src
     └── *nuevoelemento* # carpeta del elemento
         ├── _index.scss # archivo con import de todos los archivos del nuevo elemento
@@ -253,7 +245,7 @@ Hay que recordar que el orden en el que se importen los estilos tiene jerarquía
 que le dará estilo al elemento.
 
 ```bash
-sisdai-css/
+sisdai-estilos/
 └── src
     ├── [...]
     └── sisdai.scss
@@ -280,7 +272,7 @@ para controlar los puntos de cambio de diseño de celular, escritorio y navegaci
 
 
 ```bash
-sisdai-css/
+sisdai-estilos/
 └── src
     ├── _mixins.scss
     ├── _variables.scss 
@@ -343,68 +335,3 @@ npm run build
 ```
 
 El **build** actualiza los archivos de la carpeta de distribución `dist` que se utilizan para actualizar la **CDN** y que puedes utilizar como archivos locales copiándolos y pegándolos en tus proyectos.
-
-----------------
-
-### ¿Cómo agregar un nuevo pictograma?
-
-Antes de mapear la tipografía Sisdai-Pictogramas `.pictograma-`, es importante que el equipe de diseño valide los archivos SVG fuente. 
-
-#### Mapear los archivos SVG fuente
-
-Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](https://app.fontastic.me/#) con la cuenta de [Sisdai](https://sisdai.conahcyt.mx).
-
-#### Agregar los archivos de tipografía
-
-Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `src/pictograma/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
-
-#### Configurar la fuente de la tipografía
-
-Coloca la ruta de los archivos de tipografía en el módulo de `fuente.scss`. La url también puede ser de un servicio remoto.
-
-```scss
-/* src/pictograma/fuente.scss */
-
-@font-face {
-  font-family: sisdai-pictogramas;
-  src:url('fonts/sisdai-pictogramas.eot');
-  src:url('fonts/sisdai-pictogramas.eot?#iefix') format('embedded-opentype'),
-    url('fonts/sisdai-pictogramas.woff') format('woff'),
-    url('fonts/sisdai-pictogramas.ttf') format('truetype'),
-    url('fonts/sisdai-pictogramas.svg#sisdai-pictogramas') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-```
-
-#### Configurar el mapeo de la tipografía
-
-Copia y pega tal cual la lista del mapeo que viene en el archivo `style.css` importado de fontastic, asegurándote que el valor de la clave en la propiedad `content` no se repita.
-
-```scss
-/* src/pictograma/mapeo.scss */
-
-.pictograma-a:before {
-  content: "\1a";
-}
-.pictograma-b:before {
-  content: "\1b";
-}
-.pictograma-c:before {
-  content: "\1c";
-}
-...
-
-```
-
-#### Compilar para desplegar
-
-Se debe compilar para desplegar la documentación en desarrollo con el comando `npm run docs:install` y el comando `npm run build` crear el archivo de estilos comprimido para producción.
-
-
-#### Agregar el nuevo pictograma a la documentación
-
-En la vista de Fundamentos/Pictogramas de la `docs/` se deben agregar los ejemplos de los nuevos pictogramas. Así, se asegura de que funcionan correctamente.
-
-----------------
