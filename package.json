@@ -29,10 +29,10 @@
   },
   "homepage": "https://estilos.sisdai.org",
   "dependencies": {
-    "sass": "^1.86.0"
+    "sass": "^1.102.0"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
+    "concurrently": "^10.0.5",
     "stylelint": "^16.16.0",
     "stylelint-config-standard-scss": "^14.0.0"
   },
